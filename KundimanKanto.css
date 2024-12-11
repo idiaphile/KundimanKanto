@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sono", monospace;
+    font-weight: 500;
+}
+
+body {
+    background: #f5f5eb;
+    color: #333;
+}
+
+.search-bar input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.song-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+h1 {
+    /* kundiman kanto shadow text text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  */ 
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: normal;
+    color: #8b5d33;
+    margin-top: 75px;
+    font-size: 85px; 
+    text-align: center;
+}
+
+.comments-input {
+    background: #efe2d2;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: 1px solid #d1bfa7;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+input[type="text"] {
+    flex: 3; 
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #d1bfa7;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container textarea {
+    flex: 4; 
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #d1bfa7;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    scrollbar-width: none; 
+}
+
+.input-container textarea::placeholder {
+    padding: 6.5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #8b5d33;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a67242;
+}
+
+.comments-body {
+    background: #8b5d33;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: 1px solid #d79d52;
+}
+
+.comments-feed {
+    background: #d1bfa7;
+    display: flex;
+    flex-direction: column;
+    width: 559px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto;
+    border: 1px solid #ffffff;
+}
+
+.comments-feed p {
+    text-align: center;
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+.comment-box {
+    background:  #f2ddc2;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    border: 1px solid #d1bfa7;
+    position: relative;
+}
+
+.comment-box p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #8b5d33;
+}
+
+.comment-box iframe {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.edit-form button {
+    padding: 4px 8px;
+    font-size: 10px; 
+    background-color: #8b5d33;
+    color: white;
+    border: none;
+    border-radius: 7px; 
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 10px;
+    right: 69px;
+}
+
+.edit-form button:hover {
+    background-color: #a67242; 
+}
+
+.delete-form button {
+    padding: 4px 8px;
+    font-size: 10px; 
+    background-color: #8b5d33;
+    color: white;
+    border: none;
+    border-radius: 7px; 
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.delete-form button:hover {
+    background-color: #a67242; 
+}
+
+.spotify-link-container {
+    text-align: center; 
+    margin-top: 20px;   
+}
+
+.spotify-img {
+    width: 340px; 
+    height: 150px; 
+    object-fit: contain; 
+    transition: transform 0.3s ease; 
+}
+
+.spotify-img:hover {
+    transform: scale(1.2); 
+}
+
+.spotify-link-container {
+    background: #e6937f;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    border: 1px solid #f05842;
+    position: relative;
+}
+
+.tooltip {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.tooltip.show {
+    opacity: 1;
+    visibility: visible;
+}

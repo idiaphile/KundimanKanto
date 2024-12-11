@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sono", monospace;
+    font-weight: 500;
+}
+
+body {
+    background: #f5f5eb;
+    color: #333;
+     background: #f5f5eb;
+    color: #333;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.search-bar input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.comments-input {
+    background: #efe2d2;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: 1px solid #d1bfa7;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+input[type="text"] {
+    flex: 3; 
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #d1bfa7;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container textarea {
+    flex: 4; 
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #d1bfa7;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    scrollbar-width: none; 
+}
+
+.input-container textarea::placeholder {
+    padding: 6.5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #8b5d33;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a67242;
+}
